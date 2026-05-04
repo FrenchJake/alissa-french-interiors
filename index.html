@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alissa French Interiors – Refined Interior Design</title>
+  <meta name="description" content="Alissa French Interiors – thoughtful, elevated interior design for discerning clients." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <div class="header-col header-left">
+        <a href="index.html" class="header-logo-link" aria-label="Home">
+          <img src="images/logo.png" alt="Alissa French Interiors" class="header-logo-img" />
+        </a>
+      </div>
+      <div class="header-col header-center">
+        <a href="index.html" class="header-brand">Alissa French <em>Interiors</em></a>
+      </div>
+      <div class="header-col header-right">
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== DROPDOWN NAV ===================== -->
+  <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+    <nav class="nav-drawer-inner">
+      <a href="pages/about.html"     class="nav-link">About</a>
+      <a href="pages/services.html"  class="nav-link">Services</a>
+      <a href="pages/portfolio.html" class="nav-link">Portfolio</a>
+      <a href="pages/contact.html"   class="nav-link">Contact</a>
+      <a href="https://www.instagram.com/alissafrenchinteriors" target="_blank" rel="noopener" class="nav-link nav-insta">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        @alissafrenchinteriors
+      </a>
+    </nav>
+  </div>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <main>
+
+    <!-- ===================== SLIDESHOW ===================== -->
+    <section class="slideshow" id="slideshow" aria-label="Featured project slideshow">
+      <div class="slides-track" id="slides-track">
+        <div class="slide is-active">
+          <img src="images/master-bedroom/MasterBedroom1.jpg" alt="Master bedroom with tufted linen headboard, blue quilt and coastal heron art" loading="eager" />
+        </div>
+        <div class="slide">
+          <img src="images/kitchen/Kitchen8.jpg" alt="All-white kitchen with marble island and upholstered counter stools" loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="images/bathroom/master-bath/MasterBath1.jpg" alt="Master bath with double vanity, gold mirrors and marble finishes" loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="images/guest-bedroom/GuestBedroom2.jpg" alt="Guest bedroom with grasscloth accent wall and gold headboard" loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="images/kitchen/Kitchen10.jpg" alt="White kitchen with marble island, cane counter stools and open-plan dining" loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="images/outdoor/Backyard4.jpg" alt="Screened pool patio with outdoor dining and colorful florals" loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="images/bathroom/master-bath/MasterBath6.jpg" alt="Master bath blue-gray vanity with grasscloth wallpaper and LED mirrors" loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="images/master-bedroom/MasterBed2.jpg" alt="Master bedroom with leather panel bed and teal grasscloth accent wall" loading="lazy" />
+        </div>
+      </div>
+      <button class="slide-arrow arrow-prev" id="slide-prev" aria-label="Previous slide">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="slide-arrow arrow-next" id="slide-next" aria-label="Next slide">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="9 6 15 12 9 18"/></svg>
+      </button>
+      <div class="slide-dots" id="slide-dots">
+        <button class="dot is-active" data-index="0" aria-label="Slide 1"></button>
+        <button class="dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="dot" data-index="3" aria-label="Slide 4"></button>
+        <button class="dot" data-index="4" aria-label="Slide 5"></button>
+        <button class="dot" data-index="5" aria-label="Slide 6"></button>
+        <button class="dot" data-index="6" aria-label="Slide 7"></button>
+        <button class="dot" data-index="7" aria-label="Slide 8"></button>
+      </div>
+      <div class="slide-progress" id="slide-progress"></div>
+    </section>
+
+
+    <!-- ===================== SECTION 1: GALLERY ===================== -->
+    <section class="home-section gallery-section" id="gallery">
+      <div class="container">
+
+        <div class="section-header fade-up">
+          <p class="eyebrow">Portfolio</p>
+          <h2>View <em>Gallery</em></h2>
+        </div>
+
+        <div class="simple-gallery">
+
+          <a href="pages/projects/project-kitchen.html" class="sg-item fade-up">
+            <div class="sg-img"><img src="images/kitchen/Kitchen7.jpg" alt="Kitchen" /></div>
+            <p class="sg-label">Kitchen</p>
+          </a>
+
+          <a href="pages/projects/project-living-room.html" class="sg-item fade-up" style="--delay:0.07s">
+            <div class="sg-img"><img src="images/living-room/LivingRoom1.jpg" alt="Living Room" /></div>
+            <p class="sg-label">Living Room</p>
+          </a>
+
+          <a href="pages/projects/project-bedroom.html" class="sg-item fade-up" style="--delay:0.14s">
+            <div class="sg-img"><img src="images/master-bedroom/MasterBedroom1.jpg" alt="Bedrooms" /></div>
+            <p class="sg-label">Bedrooms</p>
+          </a>
+
+          <a href="pages/projects/project-bathroom.html" class="sg-item fade-up" style="--delay:0.07s">
+            <div class="sg-img"><img src="images/bathroom/master-bath/MasterBath1.jpg" alt="Bathroom" /></div>
+            <p class="sg-label">Bathroom</p>
+          </a>
+
+          <a href="pages/projects/project-outdoor.html" class="sg-item fade-up" style="--delay:0.14s">
+            <div class="sg-img"><img src="images/outdoor/FrontYard1.jpg" alt="Outdoor" /></div>
+            <p class="sg-label">Outdoor</p>
+          </a>
+
+          <a href="pages/projects/project-additional-rooms.html" class="sg-item fade-up" style="--delay:0.21s">
+            <div class="sg-img"><img src="images/home-office/HomeOffice2.jpg" alt="Additional Rooms" /></div>
+            <p class="sg-label">Additional Rooms</p>
+          </a>
+
+        </div>
+
+        <div class="section-cta fade-up">
+          <a href="pages/portfolio.html" class="btn btn-dark">View Full Portfolio</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================== SECTION 2: WHAT I OFFER ===================== -->
+    <section class="home-section offers-section" id="services">
+      <div class="container">
+        <div class="section-header fade-up">
+          <p class="eyebrow">Services</p>
+          <h2>What I <em>Offer</em></h2>
+        </div>
+        <div class="offers-grid">
+          <div class="offer-card fade-up">
+            <span class="offer-num">01</span>
+            <h3>Full-Service Design</h3>
+            <a href="pages/services.html" class="offer-link">Learn more →</a>
+          </div>
+          <div class="offer-card fade-up" style="--delay:0.1s">
+            <span class="offer-num">02</span>
+            <h3>Room Redesign</h3>
+            <a href="pages/services.html" class="offer-link">Learn more →</a>
+          </div>
+          <div class="offer-card fade-up" style="--delay:0.2s">
+            <span class="offer-num">03</span>
+            <h3>Design Consultation</h3>
+            <a href="pages/services.html" class="offer-link">Learn more →</a>
+          </div>
+          <div class="offer-card fade-up" style="--delay:0.3s">
+            <span class="offer-num">04</span>
+            <h3>Styling &amp; Refresh</h3>
+            <a href="pages/services.html" class="offer-link">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== SECTION 3: ABOUT ===================== -->
+    <section class="home-section about-section" id="about">
+      <div class="container">
+        <div class="about-split">
+          <div class="about-img-wrap fade-up">
+            <img src="images/FrenchAlissa_BioPic.jpg" alt="Alissa French, Interior Designer" />
+          </div>
+          <div class="about-text fade-up" style="--delay:0.15s">
+            <p class="eyebrow">About Alissa</p>
+            <h2>Designed Around <em>Your Life</em></h2>
+            <p>I founded Alissa French Interiors with a single belief: that beautiful spaces aren't a luxury — they're a foundation for a life well-lived. Every project starts with a conversation about how you live, not just how you want things to look.</p>
+            <a href="pages/about.html" class="btn btn-dark">Read My Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-img-wrap">
+            <img src="images/logo.png" alt="Alissa French Interiors" class="footer-logo-img" />
+          </a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Navigate</p>
+          <a href="pages/about.html">About</a>
+          <a href="pages/services.html">Services</a>
+          <a href="pages/portfolio.html">Portfolio</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Contact</p>
+          <a href="mailto:alissafrench@gmail.com">alissafrench@gmail.com</a>
+          <a href="tel:+18477070914">(847) 707-0914</a>
+          <a href="https://www.instagram.com/alissafrenchinteriors" target="_blank" rel="noopener" class="footer-insta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            @alissafrenchinteriors
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Alissa French Interiors. All rights reserved.</p>
+        <a href="pages/contact.html" class="footer-cta-link">Start a Project →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

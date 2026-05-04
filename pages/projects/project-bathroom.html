@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bathroom Renovation – Alissa French Interiors</title>
+  <meta name="description" content="Master and guest bathroom renovations by Alissa French Interiors — spa-worthy details, elevated fixtures, and spaces designed to feel like a retreat." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Bathroom tab styles ── */
+    .bath-tabs {
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid #e2ddd8;
+      margin-bottom: 2.5rem;
+    }
+    .bath-tab {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8a8580;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: 0.75rem 2rem 0.75rem 0;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+      margin-bottom: -1px;
+    }
+    .bath-tab:hover { color: #2a2a2a; }
+    .bath-tab.is-active {
+      color: #2a2a2a;
+      border-bottom-color: #2a2a2a;
+    }
+    .bath-panel { display: none; }
+    .bath-panel.is-active { display: block; }
+  </style>
+</head>
+<body class="inner-page">
+
+  <header class="site-header inner-header" id="site-header">
+    <div class="header-inner inner-header-inner">
+      <a href="../../index.html" class="inner-logo-link">
+        <img src="../../images/logo.png" alt="Alissa French Interiors" class="inner-logo-img" />
+      </a>
+      <nav class="inner-nav">
+        <a href="../about.html"     class="inner-nav-link">About</a>
+        <a href="../services.html"  class="inner-nav-link">Services</a>
+        <a href="../portfolio.html" class="inner-nav-link active">Portfolio</a>
+        <a href="../contact.html"   class="inner-nav-link">Contact</a>
+      </nav>
+      <button class="hamburger inner-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+    <nav class="nav-drawer-inner">
+      <a href="../about.html"     class="nav-link">About</a>
+      <a href="../services.html"  class="nav-link">Services</a>
+      <a href="../portfolio.html" class="nav-link">Portfolio</a>
+      <a href="../contact.html"   class="nav-link">Contact</a>
+      <a href="https://www.instagram.com/alissafrenchinteriors" target="_blank" rel="noopener" class="nav-link nav-insta">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        @alissafrenchinteriors
+      </a>
+    </nav>
+  </div>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <main>
+
+    <section class="project-hero fade-in">
+      <div class="container">
+        <a href="../portfolio.html" class="back-link">&#8592; Back to Portfolio</a>
+        <div class="project-meta">
+          <p class="eyebrow">Bathroom</p>
+          <h1>Bathroom Renovation</h1>
+          <p class="project-desc">From spa-like master retreats to personality-packed guest baths — every space designed with intention, elevated fixtures, and details that make daily rituals feel special.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-gallery">
+      <div class="container">
+
+        <!-- TABS -->
+        <div class="bath-tabs" role="tablist">
+          <button class="bath-tab is-active" role="tab" aria-selected="true"  data-tab="master">Master Bath</button>
+          <button class="bath-tab"           role="tab" aria-selected="false" data-tab="guest">Guest Bath</button>
+        </div>
+
+        <!-- MASTER BATH PANEL -->
+        <div class="bath-panel is-active" id="panel-master">
+          <div class="gallery-img-grid fade-up">
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/master-bath/MasterBath1.jpg" alt="Master bath double vanity with gold octagonal mirrors and brass faucets" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/master-bath/MasterBath2.jpg" alt="Master bath makeup vanity and floor-to-ceiling marble shower enclosure" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/master-bath/MasterBath3.jpg" alt="Master bath with closet view, marble tile and gold hardware detail" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/master-bath/MasterBath4.jpg" alt="Master bath single vanity with marble surround and glass shower" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/master-bath/Masterbath5.jpg" alt="Master bath double vanity with gold rectangular mirrors and open shelving" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/master-bath/MasterBath6.jpg" alt="Master bath blue-gray vanity with grasscloth wallpaper and LED mirrors" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/master-bath/MasterBath7.jpg" alt="Master bath walk-in shower with marble tile and garden window view" />
+            </div>
+          </div>
+        </div>
+
+        <!-- GUEST BATH PANEL -->
+        <div class="bath-panel" id="panel-guest">
+          <div class="gallery-img-grid fade-up">
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom3.jpg" alt="Guest bath floating vanity with hex tile floor and medicine cabinet" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom4.jpg" alt="Guest bath with black and white geometric hex tile floor" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom5.jpg" alt="Vibrant guest bath with colorful monkey wallpaper and rattan mirror" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom6.jpg" alt="Powder room with marble vessel sink, oval mirror and gold wall-mount faucet" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom7.jpg" alt="Tropical guest bath with pineapple art, white cabinetry and gold fixtures" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom8.jpg" alt="Navy blue bathroom with bold art and wall-hung toilet" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom9.jpg" alt="Navy bathroom full view with accessible shower and dramatic dark walls" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom10.jpg" alt="Clean all-white double vanity guest bath with chrome fixtures" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom11.jpg" alt="Powder room with whimsical monkey wallpaper and vessel sink" />
+            </div>
+            <div class="gallery-img-item lightbox-trigger">
+              <img src="../../images/bathroom/guest-bath/Bathroom12.jpg" alt="Powder room with nature wallpaper and wood-tone vanity" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECT NAVIGATION -->
+    <section class="section project-nav-row fade-up">
+      <div class="container">
+        <a href="project-additional-rooms.html" class="pnav-link pnav-prev">
+          <span>&#8592; Previous</span>
+          <strong>Additional Rooms</strong>
+        </a>
+        <a href="../portfolio.html" class="pnav-all">All Projects</a>
+        <a href="project-kitchen.html" class="pnav-link pnav-next">
+          <span>Next &#8594;</span>
+          <strong>Modern Kitchen</strong>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8592;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#8594;</button>
+    <div class="lightbox-inner">
+      <img id="lightbox-img" src="" alt="Enlarged view" />
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../../index.html" class="footer-logo-img-wrap">
+            <img src="../../images/logo.png" alt="Alissa French Interiors" class="footer-logo-img" />
+          </a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Navigate</p>
+          <a href="../about.html">About</a>
+          <a href="../services.html">Services</a>
+          <a href="../portfolio.html">Portfolio</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Contact</p>
+          <a href="mailto:alissafrench@gmail.com">alissafrench@gmail.com</a>
+          <a href="tel:+18477070914">(847) 707-0914</a>
+          <a href="https://www.instagram.com/alissafrenchinteriors" target="_blank" rel="noopener" class="footer-insta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            @alissafrenchinteriors
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Alissa French Interiors. All rights reserved.</p>
+        <a href="../contact.html" class="footer-cta-link">Start a Project &#8594;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+  <script>
+    // Tab switching — also re-initialises lightbox triggers for newly visible panel
+    document.querySelectorAll('.bath-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update tabs
+        document.querySelectorAll('.bath-tab').forEach(t => {
+          t.classList.remove('is-active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('is-active');
+        tab.setAttribute('aria-selected', 'true');
+
+        // Update panels
+        document.querySelectorAll('.bath-panel').forEach(p => p.classList.remove('is-active'));
+        document.getElementById('panel-' + tab.dataset.tab).classList.add('is-active');
+
+        // Re-trigger fade-up for newly shown panel
+        const newGrid = document.querySelector('#panel-' + tab.dataset.tab + ' .fade-up');
+        if (newGrid && !newGrid.classList.contains('visible')) {
+          newGrid.classList.add('visible');
+        }
+
+        // Re-bind lightbox to include newly visible images
+        rebindLightbox();
+      });
+    });
+
+    function rebindLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      const lbImg    = document.getElementById('lightbox-img');
+      const lbClose  = document.getElementById('lightbox-close');
+      const lbPrev   = document.getElementById('lightbox-prev');
+      const lbNext   = document.getElementById('lightbox-next');
+
+      // Only triggers in the currently active panel
+      const activePanel   = document.querySelector('.bath-panel.is-active');
+      const triggers      = Array.from(activePanel.querySelectorAll('.lightbox-trigger'));
+      const imgs          = triggers.map(t => t.querySelector('img'));
+      let cur = 0;
+
+      const open  = i => { cur = i; lbImg.src = imgs[i].src; lbImg.alt = imgs[i].alt; lightbox.classList.add('open'); document.body.style.overflow = 'hidden'; };
+      const close = () => { lightbox.classList.remove('open'); document.body.style.overflow = ''; };
+
+      // Remove old listeners by cloning buttons
+      const newClose = lbClose.cloneNode(true);
+      const newPrev  = lbPrev.cloneNode(true);
+      const newNext  = lbNext.cloneNode(true);
+      lbClose.replaceWith(newClose);
+      lbPrev.replaceWith(newPrev);
+      lbNext.replaceWith(newNext);
+
+      triggers.forEach((t, i) => {
+        t.onclick = () => open(i);
+      });
+      newClose.addEventListener('click', close);
+      lightbox.addEventListener('click', e => { if (e.target === lightbox) close(); });
+      newPrev.addEventListener('click', () => open((cur - 1 + imgs.length) % imgs.length));
+      newNext.addEventListener('click', () => open((cur + 1) % imgs.length));
+    }
+
+    // Init on load
+    rebindLightbox();
+  </script>
+</body>
+</html>
