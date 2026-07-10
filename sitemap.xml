@@ -3,67 +3,85 @@
 
   <url>
     <loc>https://alissafrenchinteriors.com/</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://alissafrenchinteriors.com/pages/about.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://alissafrenchinteriors.com/pages/services.html</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://alissafrenchinteriors.com/pages/portfolio.html</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <priority>0.9</priority>
   </url>
 
   <url>
+    <loc>https://alissafrenchinteriors.com/pages/love-notes.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://alissafrenchinteriors.com/pages/contact.html</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://alissafrenchinteriors.com/pages/projects/project-kitchen.html</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://alissafrenchinteriors.com/pages/projects/project-living-room.html</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://alissafrenchinteriors.com/pages/projects/project-bedroom.html</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://alissafrenchinteriors.com/pages/projects/project-bathroom.html</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://alissafrenchinteriors.com/pages/projects/project-outdoor.html</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://alissafrenchinteriors.com/pages/projects/project-laundry.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://alissafrenchinteriors.com/pages/projects/project-home-bar.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://alissafrenchinteriors.com/pages/projects/project-ada.html</loc>
+    <lastmod>2026-07-10</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://alissafrenchinteriors.com/pages/projects/project-additional-rooms.html</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <priority>0.7</priority>
   </url>
 

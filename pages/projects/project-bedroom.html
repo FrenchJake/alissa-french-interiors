@@ -11,40 +11,22 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bedrooms – Alissa French Interiors</title>
-  <meta name="description" content="Guest bedrooms and master bedroom suites by Alissa French Interiors — each space designed with personality, layered comfort, and a personal sanctuary feel." />
+  <title>Bedrooms &amp; Closets – Alissa French Interiors</title>
+  <meta name="description" content="Guest bedrooms, master suites, and the walk-in closets that complete them — each space designed with personality, layered comfort, and a personal sanctuary feel." />
   <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alissafrenchinteriors.com/pages/projects/project-bedroom.html" />
+  <meta property="og:title" content="Bedrooms &amp; Closets – Alissa French Interiors" />
+  <meta property="og:description" content="Guest bedrooms, master suites, and the walk-in closets that complete them — each space designed with personality, layered comfort, and a personal sanctuary feel." />
+  <meta property="og:image" content="https://alissafrenchinteriors.com/images/social-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bedrooms &amp; Closets – Alissa French Interiors" />
+  <meta name="twitter:description" content="Guest bedrooms, master suites, and the walk-in closets that complete them — each space designed with personality, layered comfort, and a personal sanctuary feel." />
+  <meta name="twitter:image" content="https://alissafrenchinteriors.com/images/social-preview.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    .bed-tabs {
-      display: flex;
-      gap: 0;
-      border-bottom: 1px solid #e2ddd8;
-      margin-bottom: 2.5rem;
-    }
-    .bed-tab {
-      font-family: var(--font-sans);
-      font-size: 0.7rem;
-      font-weight: 400;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #8a8580;
-      background: none;
-      border: none;
-      border-bottom: 2px solid transparent;
-      padding: 0.75rem 2rem 0.75rem 0;
-      cursor: pointer;
-      transition: color 0.2s, border-color 0.2s;
-      margin-bottom: -1px;
-    }
-    .bed-tab:hover { color: #2a2a2a; }
-    .bed-tab.is-active {
-      color: #2a2a2a;
-      border-bottom-color: #2a2a2a;
-    }
-    .bed-panel { display: none; }
-    .bed-panel.is-active { display: block; }
-  </style>
 </head>
 <body class="inner-page">
 
@@ -55,8 +37,8 @@
       </a>
       <nav class="inner-nav">
         <a href="../about.html"     class="inner-nav-link">About</a>
-        <a href="../services.html"  class="inner-nav-link">Services</a>
         <a href="../portfolio.html" class="inner-nav-link active">Portfolio</a>
+        <a href="../love-notes.html" class="inner-nav-link">Love Notes</a>
         <a href="../contact.html"   class="inner-nav-link">Contact</a>
       </nav>
       <button class="hamburger inner-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
@@ -68,8 +50,8 @@
   <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
     <nav class="nav-drawer-inner">
       <a href="../about.html"     class="nav-link">About</a>
-      <a href="../services.html"  class="nav-link">Services</a>
       <a href="../portfolio.html" class="nav-link">Portfolio</a>
+      <a href="../love-notes.html" class="nav-link">Love Notes</a>
       <a href="../contact.html"   class="nav-link">Contact</a>
       <a href="https://www.instagram.com/alissafrenchinteriors" target="_blank" rel="noopener" class="nav-link nav-insta">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
@@ -86,59 +68,55 @@
         <a href="../portfolio.html" class="back-link">&#8592; Back to Portfolio</a>
         <div class="project-meta">
           <p class="eyebrow">Bedroom</p>
-          <h1>Bedrooms</h1>
-          <p class="project-desc">From serene master retreats to vibrant guest suites — every bedroom is designed to feel like a personal sanctuary, layered with texture, color, and intention.</p>
+          <h1>Bedrooms &amp; Closets</h1>
+          <p class="project-desc">From serene master retreats to vibrant guest suites — every bedroom is designed to feel like a personal sanctuary, layered with texture, color, and intention. Each is paired with a custom walk-in closet, designed to make getting dressed a daily pleasure.</p>
         </div>
       </div>
     </section>
 
     <section class="section project-gallery">
       <div class="container">
-
-        <div class="bed-tabs" role="tablist">
-          <button class="bed-tab is-active" role="tab" aria-selected="true"  data-tab="master">Master Bedroom</button>
-          <button class="bed-tab"           role="tab" aria-selected="false" data-tab="guest">Guest Bedroom</button>
-        </div>
-
-        <!-- MASTER BEDROOM PANEL -->
-        <div class="bed-panel is-active" id="panel-master">
-          <div class="gallery-img-grid fade-up">
-            <div class="gallery-img-item lightbox-trigger">
-              <img src="../../images/master-bedroom/MasterBedroom1.jpg" alt="Master bedroom with tufted linen headboard, blue quilt and coastal heron art" />
-            </div>
-            <div class="gallery-img-item lightbox-trigger">
-              <img src="../../images/master-bedroom/MasterBed2.jpg" alt="Master bedroom with leather panel bed, teal grasscloth accent wall and French doors" />
-            </div>
-            <div class="gallery-img-item lightbox-trigger">
-              <img src="../../images/closet/Closet2.jpg" alt="Walk-in closet with floor-to-ceiling shoe shelving, marble island and full clothing display" />
-            </div>
-            <div class="gallery-img-item lightbox-trigger">
-              <img src="../../images/closet/Closet1.jpg" alt="Walk-in closet full view with dual hanging rods, hat shelving, marble center island" />
-            </div>
+        <div class="gallery-img-grid fade-up">
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew01.jpg" alt="Guest bedroom built-in with white cabinetry, brass pulls, and a bedside vanity nook" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew02.jpg" alt="Bedroom with tufted leather panel bed, teal grasscloth accent wall, and French doors" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew03.jpg" alt="Walk-in closet with folded clothes shelving, handbag display, and blue upholstered bench" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew04.jpg" alt="Bedroom with gold velvet headboard, grasscloth wall, and framed black-and-white portrait" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew05.jpg" alt="Bright guest bedroom with raffia ceiling, coral ikat bedding, and beaded chandelier" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew06.jpg" alt="Guest bedroom with green and blue floral headboard, navy nightstands, and diamond-pattern rug" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew07.jpg" alt="Walk-in closet with hanging clothes on both walls, hat shelving, and center island" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew08.jpg" alt="Walk-in closet with floor-to-ceiling shoe shelving, handbags, and marble center island" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew09.jpg" alt="Closet detail with shoe shelving, storage drawers, and a jewelry organizer" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew10.jpg" alt="Closet detail with folded linens, jewelry display, and hats hanging above storage baskets" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew11.jpg" alt="Master bedroom with tufted linen headboard, blue medallion pillow, and coastal heron art" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew12.jpg" alt="Detail of a wood-blade ceiling fan against a woven raffia ceiling" loading="lazy" decoding="async" />
+          </div>
+          <div class="gallery-img-item lightbox-trigger">
+            <img src="../../images/bedroom/BedroomNew13.jpg" alt="Master bedroom wide view with tufted headboard, blue accent pillow, and wicker armchair" loading="lazy" decoding="async" />
           </div>
         </div>
-
-        <!-- GUEST BEDROOM PANEL -->
-        <div class="bed-panel" id="panel-guest">
-          <div class="gallery-img-grid fade-up">
-            <div class="gallery-img-item lightbox-trigger">
-              <img src="../../images/guest-bedroom/GuestBedroom1.jpg" alt="Twin guest bedroom with textured wall panels and gray upholstered headboards" />
-            </div>
-            <div class="gallery-img-item lightbox-trigger">
-              <img src="../../images/guest-bedroom/GuestBedroom2.jpg" alt="Guest bedroom with grasscloth accent wall, gold headboard, and warm tones" />
-            </div>
-            <div class="gallery-img-item lightbox-trigger">
-              <img src="../../images/guest-bedroom/GuestBedroom3.jpg" alt="Guest bedroom with full view including personal art collection and French doors" />
-            </div>
-            <div class="gallery-img-item lightbox-trigger">
-              <img src="../../images/guest-bedroom/GuestBed4.jpg" alt="Vibrant guest room with coral and pink ikat bedding and raffia ceiling" />
-            </div>
-            <div class="gallery-img-item lightbox-trigger">
-              <img src="../../images/guest-bedroom/GuestBed5.jpg" alt="Guest bedroom with floral upholstered headboard in green and navy accents" />
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -165,7 +143,7 @@
     <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8592;</button>
     <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#8594;</button>
     <div class="lightbox-inner">
-      <img id="lightbox-img" src="" alt="Enlarged view" />
+      <img id="lightbox-img" src="" alt="Enlarged view" loading="lazy" decoding="async" />
     </div>
   </div>
 
@@ -174,19 +152,19 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="../../index.html" class="footer-logo-img-wrap">
-            <img src="../../images/logo.png" alt="Alissa French Interiors" class="footer-logo-img" />
+            <img src="../../images/logo.png" alt="Alissa French Interiors" class="footer-logo-img" loading="lazy" decoding="async" />
           </a>
         </div>
         <div class="footer-col">
           <p class="footer-heading">Navigate</p>
           <a href="../about.html">About</a>
-          <a href="../services.html">Services</a>
           <a href="../portfolio.html">Portfolio</a>
+          <a href="../love-notes.html">Love Notes</a>
           <a href="../contact.html">Contact</a>
         </div>
         <div class="footer-col">
           <p class="footer-heading">Contact</p>
-          <a href="mailto:alissafrench@gmail.com">alissafrench@gmail.com</a>
+          <a href="mailto:alissafrenchinteriors@gmail.com">alissafrenchinteriors@gmail.com</a>
           <a href="tel:+18477070914">(847) 707-0914</a>
           <a href="https://www.instagram.com/alissafrenchinteriors" target="_blank" rel="noopener" class="footer-insta">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
@@ -202,45 +180,5 @@
   </footer>
 
   <script src="../../js/main.js"></script>
-  <script>
-    document.querySelectorAll('.bed-tab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        document.querySelectorAll('.bed-tab').forEach(t => {
-          t.classList.remove('is-active');
-          t.setAttribute('aria-selected', 'false');
-        });
-        tab.classList.add('is-active');
-        tab.setAttribute('aria-selected', 'true');
-        document.querySelectorAll('.bed-panel').forEach(p => p.classList.remove('is-active'));
-        document.getElementById('panel-' + tab.dataset.tab).classList.add('is-active');
-        const grid = document.querySelector('#panel-' + tab.dataset.tab + ' .fade-up');
-        if (grid && !grid.classList.contains('visible')) grid.classList.add('visible');
-        rebindLightbox();
-      });
-    });
-
-    function rebindLightbox() {
-      const lightbox   = document.getElementById('lightbox');
-      const lbImg      = document.getElementById('lightbox-img');
-      const activePanel = document.querySelector('.bed-panel.is-active');
-      const triggers   = Array.from(activePanel.querySelectorAll('.lightbox-trigger'));
-      if (!triggers.length) return;
-      const imgs = triggers.map(t => t.querySelector('img'));
-      let cur = 0;
-      const open  = i => { cur = i; lbImg.src = imgs[i].src; lbImg.alt = imgs[i].alt; lightbox.classList.add('open'); document.body.style.overflow = 'hidden'; };
-      const close = () => { lightbox.classList.remove('open'); document.body.style.overflow = ''; };
-      ['lightbox-close','lightbox-prev','lightbox-next'].forEach(id => {
-        const el = document.getElementById(id);
-        const clone = el.cloneNode(true);
-        el.replaceWith(clone);
-      });
-      triggers.forEach((t, i) => { t.onclick = () => open(i); });
-      document.getElementById('lightbox-close').addEventListener('click', close);
-      lightbox.addEventListener('click', e => { if (e.target === lightbox) close(); });
-      document.getElementById('lightbox-prev').addEventListener('click', () => open((cur - 1 + imgs.length) % imgs.length));
-      document.getElementById('lightbox-next').addEventListener('click', () => open((cur + 1) % imgs.length));
-    }
-    rebindLightbox();
-  </script>
 </body>
 </html>

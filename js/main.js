@@ -14,26 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (header && !isInner) {
     function updateHeader() {
-      const scrollY    = window.scrollY;
-      const fadeStart  = 80;
-      const fadeEnd    = 380;
-      const minOpacity = 0.18;
+      const scrollY   = window.scrollY;
+      const fadeStart = 80;
 
-      if (scrollY <= fadeStart) {
-        header.style.opacity = '1';
-        header.classList.remove('scrolled');
-      } else if (scrollY >= fadeEnd) {
-        header.style.opacity = String(minOpacity);
-        header.classList.add('scrolled');
-      } else {
-        const p = (scrollY - fadeStart) / (fadeEnd - fadeStart);
-        header.style.opacity = String((1 - p * (1 - minOpacity)).toFixed(3));
-        header.classList.add('scrolled');
-      }
+      header.style.opacity = '1';
+      header.classList.toggle('scrolled', scrollY > fadeStart);
     }
-    // Re-show on hover
-    header.addEventListener('mouseenter', () => { header.style.opacity = '1'; });
-    header.addEventListener('mouseleave', updateHeader);
     window.addEventListener('scroll', updateHeader, { passive: true });
     updateHeader();
   }
@@ -196,24 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ===========================================================
-     5. PORTFOLIO PAGE FILTER
-  =========================================================== */
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const pItems     = document.querySelectorAll('.portfolio-item[data-category]');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const f = btn.dataset.filter;
-      pItems.forEach(item => {
-        item.style.display = (f === 'all' || item.dataset.category === f) ? '' : 'none';
-      });
-    });
-  });
-
-
-  /* ===========================================================
      6. SCROLL FADE-UP
   =========================================================== */
   const fadeEls = document.querySelectorAll('.fade-up');
@@ -253,20 +221,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'ArrowLeft')  open((cur-1+imgs.length)%imgs.length);
       if (e.key === 'ArrowRight') open((cur+1)%imgs.length);
     });
+
+    // Touch / swipe — same gesture as the homepage slideshow
+    let lbTouchX = 0;
+    lightbox.addEventListener('touchstart', e => { lbTouchX = e.changedTouches[0].screenX; }, { passive: true });
+    lightbox.addEventListener('touchend', e => {
+      const delta = lbTouchX - e.changedTouches[0].screenX;
+      if (Math.abs(delta) > 44) delta > 0 ? open((cur + 1) % imgs.length) : open((cur - 1 + imgs.length) % imgs.length);
+    }, { passive: true });
   }
-
-
-  /* ===========================================================
-     8. CONTACT FORM
-  =========================================================== */
-  const form    = document.getElementById('contact-form');
-  const success = document.getElementById('form-success');
-  form?.addEventListener('submit', e => {
-    e.preventDefault();
-    // Replace action="#" with Formspree URL to enable real email sending
-    form.style.opacity = '0.4';
-    form.style.pointerEvents = 'none';
-    success?.classList.add('visible');
-  });
 
 });

@@ -14,6 +14,18 @@
   <title>Portfolio – Alissa French Interiors</title>
   <meta name="description" content="Browse interior design projects by Alissa French Interiors." />
   <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alissafrenchinteriors.com/pages/portfolio.html" />
+  <meta property="og:title" content="Portfolio – Alissa French Interiors" />
+  <meta property="og:description" content="Browse interior design projects by Alissa French Interiors." />
+  <meta property="og:image" content="https://alissafrenchinteriors.com/images/social-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio – Alissa French Interiors" />
+  <meta name="twitter:description" content="Browse interior design projects by Alissa French Interiors." />
+  <meta name="twitter:image" content="https://alissafrenchinteriors.com/images/social-preview.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body class="inner-page">
@@ -25,8 +37,8 @@
       </a>
       <nav class="inner-nav">
         <a href="about.html"     class="inner-nav-link">About</a>
-        <a href="services.html"  class="inner-nav-link">Services</a>
         <a href="portfolio.html" class="inner-nav-link active">Portfolio</a>
+        <a href="love-notes.html" class="inner-nav-link">Love Notes</a>
         <a href="contact.html"   class="inner-nav-link">Contact</a>
       </nav>
       <button class="hamburger inner-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
@@ -38,8 +50,8 @@
   <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
     <nav class="nav-drawer-inner">
       <a href="about.html"     class="nav-link">About</a>
-      <a href="services.html"  class="nav-link">Services</a>
       <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="love-notes.html" class="nav-link">Love Notes</a>
       <a href="contact.html"   class="nav-link">Contact</a>
       <a href="https://www.instagram.com/alissafrenchinteriors" target="_blank" rel="noopener" class="nav-link nav-insta">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
@@ -61,13 +73,16 @@
     <section class="portfolio-filter fade-up">
       <div class="container">
         <div class="filter-buttons">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="kitchen">Kitchen</button>
-          <button class="filter-btn" data-filter="bathroom">Bathroom</button>
-          <button class="filter-btn" data-filter="living-room">Living Room</button>
-          <button class="filter-btn" data-filter="bedroom">Bedroom</button>
-          <button class="filter-btn" data-filter="outdoor">Outdoor</button>
-          <button class="filter-btn" data-filter="misc">Additional Rooms</button>
+          <a href="portfolio.html" class="filter-btn active">All</a>
+          <a href="projects/project-kitchen.html" class="filter-btn">Kitchen</a>
+          <a href="projects/project-living-room.html" class="filter-btn">Living Room</a>
+          <a href="projects/project-bedroom.html" class="filter-btn">Bedroom</a>
+          <a href="projects/project-bathroom.html" class="filter-btn">Bathroom</a>
+          <a href="projects/project-outdoor.html" class="filter-btn">Outdoor</a>
+          <a href="projects/project-laundry.html" class="filter-btn">Laundry Room</a>
+          <a href="projects/project-home-bar.html" class="filter-btn">Home Bars</a>
+          <a href="projects/project-ada.html" class="filter-btn">ADA Compliant</a>
+          <a href="projects/project-additional-rooms.html" class="filter-btn">Other</a>
         </div>
       </div>
     </section>
@@ -78,23 +93,23 @@
 
           <a href="projects/project-kitchen.html" class="portfolio-item fade-up" data-category="kitchen">
             <div class="portfolio-img">
-              <img src="../images/kitchen/Kitchen1.jpg" alt="Modern Kitchen Renovation" />
+              <img src="../images/kitchen/KitchenNew10.jpg" alt="White kitchen with waterfall marble island, glass-front cabinets, and brass hardware" loading="lazy" decoding="async" />
               <div class="portfolio-hover"><span>Modern Kitchen</span></div>
             </div>
-            <p class="portfolio-label">Kitchen Renovation</p>
+            <p class="portfolio-label">Kitchen</p>
           </a>
 
           <a href="projects/project-living-room.html" class="portfolio-item fade-up" data-category="living-room" style="--delay:0.08s">
             <div class="portfolio-img">
-              <img src="../images/living-room/LivingRoom1.jpg" alt="Living Room Redesign" />
+              <img src="../images/living-room/LivingRoomNew01.jpg" alt="Bright living room with white sectional sofa, blue abstract artwork, and swivel accent chairs" loading="lazy" decoding="async" />
               <div class="portfolio-hover"><span>Living Room</span></div>
             </div>
-            <p class="portfolio-label">Living Room Redesign</p>
+            <p class="portfolio-label">Living Room</p>
           </a>
 
           <a href="projects/project-bedroom.html" class="portfolio-item fade-up" data-category="bedroom" style="--delay:0.16s">
             <div class="portfolio-img">
-              <img src="../images/master-bedroom/MasterBedroom1.jpg" alt="Bedrooms" />
+              <img src="../images/bedroom/BedroomNew11.jpg" alt="Master bedroom with tufted linen headboard, blue medallion pillow, and coastal heron art" loading="lazy" decoding="async" />
               <div class="portfolio-hover"><span>Bedrooms</span></div>
             </div>
             <p class="portfolio-label">Bedrooms</p>
@@ -102,26 +117,50 @@
 
           <a href="projects/project-bathroom.html" class="portfolio-item fade-up" data-category="bathroom" style="--delay:0.08s">
             <div class="portfolio-img">
-              <img src="../images/bathroom/master-bath/MasterBath1.jpg" alt="Bathroom Renovation" />
-              <div class="portfolio-hover"><span>Master Bath</span></div>
+              <img src="../images/bathroom/master-bath/MasterBathNew07.jpg" alt="Walk-in shower with marble subway tile, hexagonal mosaic niche, and brushed gold hardware" loading="lazy" decoding="async" />
+              <div class="portfolio-hover"><span>Bathroom</span></div>
             </div>
-            <p class="portfolio-label">Bathroom Renovation</p>
+            <p class="portfolio-label">Bathroom</p>
           </a>
 
           <a href="projects/project-outdoor.html" class="portfolio-item fade-up" data-category="outdoor" style="--delay:0.16s">
             <div class="portfolio-img">
-              <img src="../images/outdoor/FrontYard1.jpg" alt="Outdoor &amp; Exterior" />
+              <img src="../images/outdoor/OutdoorNew02.jpg" alt="Covered lanai viewed from the pool, showing the full outdoor living room, dining table, and open wet bar shelving" loading="lazy" decoding="async" />
               <div class="portfolio-hover"><span>Outdoor Living</span></div>
             </div>
             <p class="portfolio-label">Outdoor &amp; Exterior</p>
           </a>
 
-          <a href="projects/project-additional-rooms.html" class="portfolio-item fade-up" data-category="misc" style="--delay:0.24s">
+          <a href="projects/project-laundry.html" class="portfolio-item fade-up" data-category="laundry" style="--delay:0.24s">
             <div class="portfolio-img">
-              <img src="../images/home-office/HomeOffice2.jpg" alt="Additional Rooms" />
-              <div class="portfolio-hover"><span>Additional Rooms</span></div>
+              <img src="../images/laundry/LaundryNew05.jpg" alt="White cabinetry laundry room with egret artwork, top-load machines, and a jute rug" loading="lazy" decoding="async" />
+              <div class="portfolio-hover"><span>Laundry Room</span></div>
             </div>
-            <p class="portfolio-label">Additional Rooms</p>
+            <p class="portfolio-label">Laundry Room</p>
+          </a>
+
+          <a href="projects/project-home-bar.html" class="portfolio-item fade-up" data-category="home-bar" style="--delay:0.40s">
+            <div class="portfolio-img">
+              <img src="../images/home-bar/HomeBar04.jpg" alt="Home Bars" loading="lazy" decoding="async" />
+              <div class="portfolio-hover"><span>Home Bars</span></div>
+            </div>
+            <p class="portfolio-label">Home Bars</p>
+          </a>
+
+          <a href="projects/project-ada.html" class="portfolio-item fade-up" data-category="ada" style="--delay:0.32s">
+            <div class="portfolio-img">
+              <img src="../images/ada/ADA01.jpg" alt="Handicap Accessible - ADA Compliant" loading="lazy" decoding="async" />
+              <div class="portfolio-hover"><span>ADA Compliant</span></div>
+            </div>
+            <p class="portfolio-label">Handicap Accessible</p>
+          </a>
+
+          <a href="projects/project-additional-rooms.html" class="portfolio-item fade-up" data-category="other" style="--delay:0.40s">
+            <div class="portfolio-img">
+              <img src="../images/other/Other15.jpg" alt="Other" loading="lazy" decoding="async" />
+              <div class="portfolio-hover"><span>Other</span></div>
+            </div>
+            <p class="portfolio-label">Other</p>
           </a>
 
         </div>
@@ -135,19 +174,19 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="../index.html" class="footer-logo-img-wrap">
-            <img src="../images/logo.png" alt="Alissa French Interiors" class="footer-logo-img" />
+            <img src="../images/logo.png" alt="Alissa French Interiors" class="footer-logo-img" loading="lazy" decoding="async" />
           </a>
         </div>
         <div class="footer-col">
           <p class="footer-heading">Navigate</p>
           <a href="about.html">About</a>
-          <a href="services.html">Services</a>
           <a href="portfolio.html">Portfolio</a>
+          <a href="love-notes.html">Love Notes</a>
           <a href="contact.html">Contact</a>
         </div>
         <div class="footer-col">
           <p class="footer-heading">Contact</p>
-          <a href="mailto:alissafrench@gmail.com">alissafrench@gmail.com</a>
+          <a href="mailto:alissafrenchinteriors@gmail.com">alissafrenchinteriors@gmail.com</a>
           <a href="tel:+18477070914">(847) 707-0914</a>
           <a href="https://www.instagram.com/alissafrenchinteriors" target="_blank" rel="noopener" class="footer-insta">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
